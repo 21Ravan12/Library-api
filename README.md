@@ -132,4 +132,4 @@ mvn spring-boot:run
 
 ## 📜 License
 
-;)
+🫠
