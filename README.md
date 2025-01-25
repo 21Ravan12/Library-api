@@ -1,8 +1,9 @@
-# Library API
+
+# 📚 Library API
 
 This is a Spring Boot application for managing a library system. It provides RESTful APIs for managing books, authors, and other library resources.
 
-## Features
+## 🚀 Features
 
 - **Book Management:** Add, update, delete, and retrieve book information.
 - **Author Management:** Add, update, delete, and retrieve author information.
@@ -10,7 +11,7 @@ This is a Spring Boot application for managing a library system. It provides RES
 - **User Authentication:** Secure endpoints with authentication and authorization.
 - **Email Notifications:** Send email notifications for various events.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **Java:** Main programming language.
 - **Spring Boot:** Framework for building the application.
@@ -21,12 +22,12 @@ This is a Spring Boot application for managing a library system. It provides RES
 - **MySQL:** Main database for the application.
 - **Maven:** Build and dependency management tool.
 
-## Project Structure
+## 📂 Project Structure
 
 - **Java Version:** 23
 - **Spring Boot Version:** 3.4.2
 
-## Dependencies
+## 📦 Dependencies
 
 The project uses the following dependencies:
 - `spring-boot-starter-data-jpa`: For database-related functionality.
@@ -38,7 +39,7 @@ The project uses the following dependencies:
 - `spring-boot-starter-security`: For adding authentication and authorization to the application.
 - `spring-boot-starter-mail`: For sending emails from the application.
 
-## Configuration
+## ⚙️ Configuration
 
 The application uses the following configuration properties:
 
@@ -60,7 +61,7 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 
 Replace `<DB_USERNAME>`, `<DB_PASSWORD>`, `<EMAIL_USERNAME>`, and `<EMAIL_PASSWORD>` with your database and email credentials.
 
-## Database
+## 🗄️ Database
 
 The application uses MySQL as the main database. Ensure you have MySQL installed and running on your local machine or server. The database connection properties should be configured in the `application.properties` file as shown above.
 
@@ -68,7 +69,7 @@ The application uses MySQL as the main database. Ensure you have MySQL installed
 - **Username:** Your MySQL username
 - **Password:** Your MySQL password
 
-## Building and Running the Application
+## 🏗️ Building and Running the Application
 
 You can build and run the application using Maven:
 
@@ -77,9 +78,9 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-## API Endpoints
+## 📑 API Endpoints
 
-### User Endpoints
+### 🔒 User Endpoints
 
 - **POST /api/users/register:** User registration
 - **POST /api/users/verify:** User verification
@@ -92,7 +93,7 @@ mvn spring-boot:run
 - **GET /api/users/search:** Search users
 - **DELETE /api/users/delete:** Delete user
 
-### Book Endpoints
+### 📚 Book Endpoints
 
 - **POST /api/books/add:** Add a book
 - **GET /api/books/getAll:** Get all books
@@ -100,28 +101,28 @@ mvn spring-boot:run
 - **DELETE /api/books/delete:** Delete a book
 - **PUT /api/books/update:** Update book details
 
-### Reservation Endpoints
+### 📅 Reservation Endpoints
 
 - **POST /api/reservations/reserve:** Reserve a book
 - **GET /api/reservations/search:** Search reservations
 - **DELETE /api/reservations/delete:** Delete reservation
 - **PUT /api/reservations/update:** Update reservation
 
-### Loan Endpoints
+### 📖 Loan Endpoints
 
 - **POST /api/loans/borrow:** Borrow a book
 - **POST /api/loans/return:** Return a book
 - **GET /api/loans/search:** Search loaned books
 - **PUT /api/loans/update:** Update loan details
 
-### Comment Endpoints
+### 💬 Comment Endpoints
 
 - **POST /api/comments/add:** Add a comment
 - **DELETE /api/comments/delete:** Delete a comment
 - **GET /api/comments/search:** Search comments
 - **PUT /api/comments/update:** Update comment
 
-### Category Endpoints
+### 🗂️ Category Endpoints
 
 - **POST /api/categories/add:** Add category
 - **PUT /api/categories/update:** Update category
