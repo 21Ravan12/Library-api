@@ -23,7 +23,7 @@ public class SecurityConfig {
                 // These endpoints can be accessed without authentication
                 .requestMatchers(
                     "/api/users/register", // User registration
-                    "/api/users/verify", // User verification
+                    "/api/users/verifyForRegister", // User verification
                     "/api/users/login", // User login
                     "/api/users/changeCode", // Send password change code
                     "/api/users/verifyForChangeCode", // Verify password change code
