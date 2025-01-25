@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!-- The version of the model being used (POM version) -->
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<!-- Defines the parent POM for Spring Boot starter projects -->
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.4.2</version>
+		<relativePath/> <!-- Lookup parent POM from repository -->
+	</parent>
+
+	<!-- The basic coordinates of your project: groupId, artifactId, version -->
+	<groupId>com.example</groupId>
+	<artifactId>library-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>library-api</name>
+
+	<!-- A short description of your project -->
+	<description>Demo project for Spring Boot</description>
+
+	<!-- Licenses, developers, and SCM (Source Code Management) information can be added here if applicable -->
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+
+	<!-- Properties section where custom properties (like Java version) are specified -->
+	<properties>
+		<java.version>23</java.version>
+	</properties>
+
+	<!-- The dependencies required for the project to function -->
+	<dependencies>
+
+		<!-- Spring Boot JPA starter for database-related functionality -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Web starter for building web applications (REST APIs, etc.) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot DevTools for runtime improvements like auto-reloading and better debugging -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope> <!-- DevTools are only needed at runtime -->
+			<optional>true</optional> <!-- Optional dependency -->
+		</dependency>
+
+		<!-- H2 Database dependency (in-memory database for testing and development purposes) -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope> <!-- H2 is used at runtime for quick testing purposes -->
+		</dependency>
+
+		<!-- Spring Boot Starter Test for unit testing and integration testing support -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope> <!-- Only required during testing phase -->
+		</dependency>
+
+		<!-- MySQL Connector dependency to connect to a MySQL database -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version> <!-- Specific version of MySQL connector to use -->
+		</dependency>
+
+		<!-- Spring Security starter for adding authentication and authorization to the application -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!-- Spring Mail starter to send emails from the application -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<!-- Build configuration for the Maven plugin to package the application -->
+	<build>
+		<plugins>
+			<!-- Spring Boot Maven Plugin for packaging and running Spring Boot applications -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
