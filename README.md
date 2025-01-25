@@ -26,6 +26,7 @@ This is a Spring Boot application for managing a library system. It provides RES
 
 - **Java Version:** 23
 - **Spring Boot Version:** 3.4.2
+- **Main Directory Path:** [library-api/src/main/java/com/example/library_api](https://github.com/21Ravan12/Library-api-spring-boot/tree/main/src/main/java/com/example/library_api)
 
 ## 📦 Dependencies
 
@@ -129,3 +130,6 @@ mvn spring-boot:run
 - **GET /api/categories/search:** Search categories
 - **DELETE /api/categories/delete:** Delete category
 
+## 📜 License
+
+;)
