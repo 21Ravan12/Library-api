@@ -131,5 +131,4 @@ mvn spring-boot:run
 - **DELETE /api/categories/delete:** Delete category
 
 ## 📜 License
-
 🫠
